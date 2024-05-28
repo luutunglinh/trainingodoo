@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="books">
+        <t t-call="website.layout">
+            <div class="oe_structure">
+                <section class="pt32 pb32 bg-secondary oe_custom_bg">
+                    <div class="container text-center">
+                        <h1>Editable text and supports drag and drop.</h1>
+                    </div>
+                </section>
+            </div>
+
+            <div class="container">
+                <t t-foreach="books" t-as="book">
+                    <div t-attf-class="card mt-3 #{'bg-info' if book_odd else ''}">
+                        <div class="card-body" id="card_body">
+                            <h3 t-field="book.name"/>
+                            <t t-if="book.published_year">
+                                <div t-field="book.published_year" class="text-muted"/>
+                            </t>
+                            <b class="mt8">Authors</b>
+                            <ul>
+                                <li t-foreach="book.author_id" t-as="author">
+                                    <span t-esc="author.name"/>
+                                </li>
+                            </ul>
+                            <a t-attf-href="/books/#{book.id}" class="btn btn-primary btn-sm">
+                                <i class="fa fa-book"/>
+                                Book Detail
+                            </a>
+                        </div>
+                    </div>
+                </t>
+            </div>
+
+            <section class="container mt16" contenteditable="False">
+                This is a non-editable text after the list of books.
+            </section>
+
+        </t>
+    </template>
+
+    <!-- inheritance example -->
+    <template id="books_ids_inh" inherit_id="odoo_new.books">
+        <xpath expr="//div[@id='card_body']/b" position="replace">
+            <b class="mt8">Authors (<t t-esc="(book.author_id)"/>)
+            </b>
+        </xpath>
+    </template>
+
+    <!-- Book Detail Page -->
+    <template id="book_detail" name="Books Detail">
+        <t t-call="website.layout">
+            <div class="container">
+                <div class="row mt16">
+                    <div class="col-5">
+                        <span t-field="book.image"
+                              t-options="{'widget':'image','class':'mx-auto d-block img-thumbnail'}"/>
+                    </div>
+                    <div class="offset-1 col-6">
+                        <h1 t-field="book.name"/>
+                        <t t-if="book.published_year">
+                            <div t-field="book.published_year" class="text-muted"/>
+                        </t>
+                        <ul>
+                            <li t-foreach="book.author_id" t-as="author">
+                                <span t-esc="author.name"/>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </t>
+    </template>
+
+
+    <!--    id book_issue_form-->
+    <template id="books_issue_formm">
+        <t t-call="website.layout">
+            <div id="wrap" class="oe_structure oe_empty">
+                <section class="s_website_form" data-vcss="001" data-snippet="s_website_form">
+                    <div class="container mt32">
+                        <t t-if="submitted">
+                            <h3 class="alert alert-success mt16 mb16">
+                                <i class="fa fa-thumbs-up"/>
+                                Book submitted successfully
+                            </h3>
+                            <h1>Report the another book issue</h1>
+                        </t>
+                        <t t-else="">
+                            <h1>Report the book issue</h1>
+                        </t>
+                        <form role="form" id="contactus_form" action="/appointment/submit" method="POST"
+                              enctype="multipart/form-data" class="o_mark_required" data-mark="*" data-model_name="">
+                            <input type="hidden" name="csrf_token" t-att-value="request.csrf_token()"/>
+
+                            <div class="s_website_form_rows row s_col_no_bgcolor">
+                                <div class="form-group col-12 s_website_form_field s_website_form_required"
+                                     data-type="char" data-name="Field">
+                                    <div class="row s_col_no_resize s_col_no_bgcolor">
+                                        <label class="col-form-label col-sm-auto s_website_form_label"
+                                               style="width: 200px" for="studio1">
+                                            <span class="s_website_form_label_content">Select Books</span>
+                                            <span class="s_website_form_mark">*</span>
+                                        </label>
+                                        <div class="col-sm">
+                                            <select name="book_id" t-attf-class="form-control s_website_form_input"
+                                                    required="1">
+                                                <t t-foreach="books or []" t-as="book">
+                                                    <option t-att-value="book.id">
+                                                        <t t-esc="book.name"/>
+                                                    </option>
+                                                </t>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="form-group col-12 s_website_form_field s_website_form_required mt17"
+                                     data-type="char" data-name="Field">
+                                    <div class="row s_col_no_resize s_col_no_bgcolor">
+                                        <label class="col-form-label col-sm-auto s_website_form_label"
+                                               style="width: 200px" for="studio1">
+                                            <span class="s_website_form_label_content">Description</span>
+                                            <span class="s_website_form_mark">*</span>
+                                        </label>
+                                        <div class="col-sm mt17">
+                                            <input id="issue_description" type="text"
+                                                   class="form-control s_website_form_input"
+                                                   name="issue_description" required="1"/>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="form-group col-12">
+                                    <div style="width: 200px;" class="s_website_form_label "/>
+                                    <button type="submit" class="btn btn-primary" name="submit">
+                                        Submit
+                                    </button>
+                                </div>
+
+                                <!--                                <div class="mb-0 py-2 col-12 s_website_form_submit" data-name="Submit Button">-->
+                                <!--                                    <div style="width: 200px;" class="s_website_form_label"/>-->
+                                <!--                                    <a href="#" role="button" class="btn btn-primary s_website_form_send">Submit</a>-->
+                                <!--                                    <span id="s_website_form_result"></span>-->
+                                <!--                                </div>-->
+
+                            </div>
+                        </form>
+                    </div>
+                </section>
+            </div>
+        </t>
+    </template>
+
+    <record id="thankyou" model="website.page">
+        <field name="name">Thanks</field>
+        <field name="type">qweb</field>
+        <field name="url">/thankyou</field>
+        <field name="website_published">True</field>
+        <field name="key">odoo_new.thankyou</field>
+        <field name="arch" type="xml">
+            <t name="Thanks" t-name="odoo_new.thankyou">
+                <t t-call="website.layout">
+                    <div id="wrap">
+                        <div class="container">
+                            <h1>Thanks</h1>
+
+                        </div>
+                    </div>
+                </t>
+            </t>
+
+        </field>
+    </record>
+</odoo>

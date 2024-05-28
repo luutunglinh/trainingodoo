@@ -1,0 +1,481 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* odoo_new
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 17.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-05-15 07:23+0000\n"
+"PO-Revision-Date: 2024-05-15 07:23+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: odoo_new
+#: model_terms:ir.ui.view,arch_db:odoo_new.product_template_view_kanban_library
+msgid "<span>ISBN No:</span>"
+msgstr ""
+
+#. module: odoo_new
+#: model_terms:ir.ui.view,arch_db:odoo_new.product_template_view_kanban_library
+msgid "<span>Status:</span>"
+msgstr ""
+
+#. module: odoo_new
+#: model:res.groups,name:odoo_new.group_library_admin
+msgid "Admin"
+msgstr ""
+
+#. module: odoo_new
+#: model:ir.model.fields,field_description:odoo_new.field_book_details__author_id
+#: model:ir.model.fields,field_description:odoo_new.field_product_product__author_id
+#: model:ir.model.fields,field_description:odoo_new.field_product_template__author_id
+msgid "Author"
+msgstr ""
+
+#. module: odoo_new
+#: model_terms:ir.ui.view,arch_db:odoo_new.book_details_view_kanban
+#: model_terms:ir.ui.view,arch_db:odoo_new.product_template_view_kanban_library
+msgid "Author:"
+msgstr ""
+
+#. module: odoo_new
+#: model:ir.model.fields.selection,name:odoo_new.selection__book_details__book_state__available
+#: model:ir.model.fields.selection,name:odoo_new.selection__product_template__book_state__available
+msgid "Available"
+msgstr ""
+
+#. module: odoo_new
+#: model:ir.model.fields,field_description:odoo_new.field_book_details__copies_of_book
+#: model:ir.model.fields,field_description:odoo_new.field_product_product__copies_of_book
+#: model:ir.model.fields,field_description:odoo_new.field_product_template__copies_of_book
+msgid "Available Copies "
+msgstr ""
+
+#. module: odoo_new
+#. odoo-python
+#: code:addons/odoo_new/models/book_details.py:0
+#, python-format
+msgid "Available Copies cannot be more than Stock."
+msgstr ""
+
+#. module: odoo_new
+#: model_terms:ir.ui.view,arch_db:odoo_new.book_details_view_kanban
+msgid "Available Copies:"
+msgstr ""
+
+#. module: odoo_new
+#: model:ir.model.fields,field_description:odoo_new.field_book_borrow__book_id
+#: model:ir.model.fields,field_description:odoo_new.field_book_genre__book_id
+msgid "Book"
+msgstr ""
+
+#. module: odoo_new
+#: model:ir.model,name:odoo_new.model_book_details
+msgid "Book Detail"
+msgstr ""
+
+#. module: odoo_new
+#: model_terms:ir.ui.view,arch_db:odoo_new.product_template_library_form_view
+msgid "Book Details"
+msgstr "Chi tiết sách"
+
+#. module: odoo_new
+#: model:ir.model.fields,field_description:odoo_new.field_book_genre__name
+msgid "Book Genre"
+msgstr "Loại sách"
+
+#. module: odoo_new
+#: model:ir.model,name:odoo_new.model_book_borrow
+msgid "Book borrow"
+msgstr "Mượn Sách"
+
+#. module: odoo_new
+#: model:ir.actions.act_window,name:odoo_new.book_details_action
+#: model:ir.actions.act_window,name:odoo_new.product_template_library_action
+#: model:ir.ui.menu,name:odoo_new.book_details_menu_action
+#: model_terms:ir.ui.view,arch_db:odoo_new.book_details_view_tree
+msgid "Books"
+msgstr "Sách"
+
+#. module: odoo_new
+#. odoo-python
+#: code:addons/odoo_new/models/book_borrow.py:0
+#, python-format
+msgid "Books are not available."
+msgstr "Sách không thỏa mãn"
+
+#. module: odoo_new
+#: model:ir.model.fields,field_description:odoo_new.field_product_product__borrow_id
+#: model:ir.model.fields,field_description:odoo_new.field_product_template__borrow_id
+#: model:ir.model.fields,field_description:odoo_new.field_res_partner__borrow_ids
+#: model:ir.model.fields,field_description:odoo_new.field_res_users__borrow_ids
+#: model_terms:ir.ui.view,arch_db:odoo_new.book_borrow_view_form
+#: model_terms:ir.ui.view,arch_db:odoo_new.book_details_view_form
+msgid "Borrow"
+msgstr ""
+
+#. module: odoo_new
+#: model:ir.actions.act_window,name:odoo_new.book_borrow_action
+#: model:ir.ui.menu,name:odoo_new.book_borrow_menu_action
+#: model_terms:ir.ui.view,arch_db:odoo_new.book_details_view_form
+#: model_terms:ir.ui.view,arch_db:odoo_new.library_member_view_form
+msgid "Borrow Data"
+msgstr ""
+
+#. module: odoo_new
+#: model:ir.model.fields,field_description:odoo_new.field_book_borrow__name
+msgid "Borrow Data ID"
+msgstr ""
+
+#. module: odoo_new
+#: model_terms:ir.ui.view,arch_db:odoo_new.book_borrow_view_tree
+msgid "Borrow data"
+msgstr ""
+
+#. module: odoo_new
+#: model:ir.model.fields,field_description:odoo_new.field_book_borrow__date_of_borrow
+msgid "Borrowing Date"
+msgstr ""
+
+#. module: odoo_new
+#: model_terms:ir.ui.view,arch_db:odoo_new.book_details_view_filter
+msgid "By Genre"
+msgstr ""
+
+#. module: odoo_new
+#: model:ir.model.fields,field_description:odoo_new.field_book_genre__color
+msgid "Color Index"
+msgstr ""
+
+#. module: odoo_new
+#: model:ir.model,name:odoo_new.model_res_config_settings
+msgid "Config Settings"
+msgstr "Cài đặt cấu hình"
+
+#. module: odoo_new
+#. odoo-python
+#: code:addons/odoo_new/models/product_template.py:0
+#, python-format
+msgid "Copies of book cannot greater than Stock "
+msgstr ""
+
+#. module: odoo_new
+#: model_terms:ir.actions.act_window,help:odoo_new.product_template_library_action
+msgid "Create a new product"
+msgstr ""
+
+#. module: odoo_new
+#: model:ir.model.fields,field_description:odoo_new.field_book_borrow__create_uid
+#: model:ir.model.fields,field_description:odoo_new.field_book_details__create_uid
+#: model:ir.model.fields,field_description:odoo_new.field_book_genre__create_uid
+msgid "Created by"
+msgstr ""
+
+#. module: odoo_new
+#: model:ir.model.fields,field_description:odoo_new.field_book_borrow__create_date
+#: model:ir.model.fields,field_description:odoo_new.field_book_details__create_date
+#: model:ir.model.fields,field_description:odoo_new.field_book_genre__create_date
+msgid "Created on"
+msgstr ""
+
+#. module: odoo_new
+#: model:ir.model.fields,field_description:odoo_new.field_book_borrow__currency_id
+msgid "Currency"
+msgstr ""
+
+#. module: odoo_new
+#: model:ir.model.fields,field_description:odoo_new.field_book_borrow__current_date
+msgid "Current Date"
+msgstr ""
+
+#. module: odoo_new
+#: model:ir.model.fields,field_description:odoo_new.field_book_borrow__deadline
+msgid "Deadline"
+msgstr ""
+
+#. module: odoo_new
+#: model:ir.model.fields,field_description:odoo_new.field_book_borrow__display_name
+#: model:ir.model.fields,field_description:odoo_new.field_book_details__display_name
+#: model:ir.model.fields,field_description:odoo_new.field_book_genre__display_name
+msgid "Display Name"
+msgstr ""
+
+#. module: odoo_new
+#: model:ir.model.fields,field_description:odoo_new.field_book_details__genre_ids
+#: model:ir.model.fields,field_description:odoo_new.field_product_product__genre_ids
+#: model:ir.model.fields,field_description:odoo_new.field_product_template__genre_ids
+#: model_terms:ir.ui.view,arch_db:odoo_new.book_genre_view_tree
+msgid "Genre"
+msgstr ""
+
+#. module: odoo_new
+#: model_terms:ir.ui.view,arch_db:odoo_new.book_details_view_kanban
+msgid "Genre:"
+msgstr ""
+
+#. module: odoo_new
+#: model:ir.actions.act_window,name:odoo_new.book_genre_action
+#: model:ir.ui.menu,name:odoo_new.book_genre_menu_action
+msgid "Genres"
+msgstr ""
+
+#. module: odoo_new
+#: model:ir.model.fields,field_description:odoo_new.field_book_borrow__id
+#: model:ir.model.fields,field_description:odoo_new.field_book_details__id
+#: model:ir.model.fields,field_description:odoo_new.field_book_genre__id
+msgid "ID"
+msgstr ""
+
+#. module: odoo_new
+#: model:ir.model.fields,field_description:odoo_new.field_book_details__isbn_no
+msgid "ISBN"
+msgstr ""
+
+#. module: odoo_new
+#: model:ir.model.fields,field_description:odoo_new.field_product_product__isbn_no
+#: model:ir.model.fields,field_description:odoo_new.field_product_template__isbn_no
+msgid "ISBN no"
+msgstr ""
+
+#. module: odoo_new
+#: model_terms:ir.ui.view,arch_db:odoo_new.book_details_view_kanban
+msgid "In Stock:"
+msgstr ""
+
+#. module: odoo_new
+#: model:ir.model.fields,field_description:odoo_new.field_res_partner__is_library_member
+#: model:ir.model.fields,field_description:odoo_new.field_res_users__is_library_member
+msgid "Is member"
+msgstr ""
+
+#. module: odoo_new
+#: model:ir.model.fields,field_description:odoo_new.field_book_borrow__write_uid
+#: model:ir.model.fields,field_description:odoo_new.field_book_details__write_uid
+#: model:ir.model.fields,field_description:odoo_new.field_book_genre__write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: odoo_new
+#: model:ir.model.fields,field_description:odoo_new.field_book_borrow__write_date
+#: model:ir.model.fields,field_description:odoo_new.field_book_details__write_date
+#: model:ir.model.fields,field_description:odoo_new.field_book_genre__write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: odoo_new
+#: model:ir.module.category,name:odoo_new.module_library
+msgid "Library"
+msgstr ""
+
+#. module: odoo_new
+#: model:ir.ui.menu,name:odoo_new.library_menu_root
+#: model_terms:ir.ui.view,arch_db:odoo_new.res_config_settings_view_form
+msgid "Library Management"
+msgstr ""
+
+#. module: odoo_new
+#: model_terms:ir.ui.view,arch_db:odoo_new.res_config_settings_view_form
+msgid "Library Management Settings"
+msgstr ""
+
+#. module: odoo_new
+#: model:ir.actions.act_window,name:odoo_new.library_member_action
+#: model:ir.ui.menu,name:odoo_new.library_member_menu_action
+msgid "Library Member"
+msgstr ""
+
+#. module: odoo_new
+#: model:ir.model.fields,field_description:odoo_new.field_book_details__manager_id
+#: model:ir.model.fields,field_description:odoo_new.field_book_genre__manager_id
+#: model:ir.model.fields,field_description:odoo_new.field_product_product__manager_id
+#: model:ir.model.fields,field_description:odoo_new.field_product_template__manager_id
+#: model:res.groups,name:odoo_new.group_library_manager
+msgid "Manager"
+msgstr ""
+
+#. module: odoo_new
+#: model:ir.model.fields,field_description:odoo_new.field_res_config_settings__max_day
+msgid "Max Day"
+msgstr ""
+
+#. module: odoo_new
+#. odoo-python
+#: code:addons/odoo_new/models/book_borrow.py:0
+#, python-format
+msgid "Max of validity is less than provide data"
+msgstr ""
+
+#. module: odoo_new
+#: model:ir.model.fields,field_description:odoo_new.field_book_details__name
+msgid "Name of book"
+msgstr ""
+
+#. module: odoo_new
+#: model:ir.model.fields.selection,name:odoo_new.selection__book_borrow__borrow_state__new
+msgid "New"
+msgstr ""
+
+#. module: odoo_new
+#: model:ir.model.fields.selection,name:odoo_new.selection__book_details__book_state__not_available
+#: model:ir.model.fields.selection,name:odoo_new.selection__product_template__book_state__not_available
+msgid "Not Available"
+msgstr ""
+
+#. module: odoo_new
+#: model:ir.model.fields,field_description:odoo_new.field_res_config_settings__penalty_amount
+msgid "Penalty Amount"
+msgstr ""
+
+#. module: odoo_new
+#: model:ir.model,name:odoo_new.model_product_template
+msgid "Product"
+msgstr "Sản phẩm"
+
+#. module: odoo_new
+#: model:ir.model.fields,field_description:odoo_new.field_book_details__published_year
+#: model:ir.model.fields,field_description:odoo_new.field_product_product__published_year
+#: model:ir.model.fields,field_description:odoo_new.field_product_template__published_year
+msgid "Published Year"
+msgstr ""
+
+#. module: odoo_new
+#: model:ir.model.fields,field_description:odoo_new.field_book_borrow__reader_id
+msgid "Reader"
+msgstr ""
+
+#. module: odoo_new
+#: model_terms:ir.ui.view,arch_db:odoo_new.book_borrow_view_form
+msgid "Return"
+msgstr ""
+
+#. module: odoo_new
+#: model:ir.model.fields,field_description:odoo_new.field_book_borrow__return_date
+msgid "Return date"
+msgstr ""
+
+#. module: odoo_new
+#: model:ir.model.fields.selection,name:odoo_new.selection__book_borrow__borrow_state__returned
+msgid "Returned"
+msgstr ""
+
+#. module: odoo_new
+#: model_terms:ir.ui.view,arch_db:odoo_new.book_details_view_filter
+msgid "Search by"
+msgstr ""
+
+#. module: odoo_new
+#: model:ir.actions.act_window,name:odoo_new.library_config_settings_action
+#: model:ir.ui.menu,name:odoo_new.library_config_settings_action_menu
+msgid "Settings"
+msgstr ""
+
+#. module: odoo_new
+#: model:ir.model.fields,field_description:odoo_new.field_book_borrow__borrow_state
+#: model:ir.model.fields,field_description:odoo_new.field_book_details__book_state
+#: model:ir.model.fields,field_description:odoo_new.field_product_product__book_state
+#: model:ir.model.fields,field_description:odoo_new.field_product_template__book_state
+msgid "Status"
+msgstr ""
+
+#. module: odoo_new
+#: model:ir.model.fields,field_description:odoo_new.field_book_details__stock_of_copies
+#: model:ir.model.fields,field_description:odoo_new.field_product_product__stock_of_copies
+#: model:ir.model.fields,field_description:odoo_new.field_product_template__stock_of_copies
+msgid "Stock"
+msgstr ""
+
+#. module: odoo_new
+#: model:ir.model.fields.selection,name:odoo_new.selection__book_borrow__borrow_state__taken
+msgid "Taken"
+msgstr ""
+
+#. module: odoo_new
+#: model:ir.model.fields,field_description:odoo_new.field_book_borrow__test
+msgid "Test"
+msgstr ""
+
+#. module: odoo_new
+#: model:ir.model.constraint,message:odoo_new.constraint_product_template_check_copies_of_book
+msgid "The Available Copies must be strictly positive"
+msgstr ""
+
+#. module: odoo_new
+#: model:ir.model.constraint,message:odoo_new.constraint_book_genre_check_name
+msgid "The book genre must be unique"
+msgstr ""
+
+#. module: odoo_new
+#: model:ir.model.constraint,message:odoo_new.constraint_product_template_check_stock_of_copies
+msgid "The copies of available book must be strictly positive"
+msgstr ""
+
+#. module: odoo_new
+#: model:ir.model.constraint,message:odoo_new.constraint_product_template_check_isbn_no
+msgid "This ISBN number must be unique"
+msgstr ""
+
+#. module: odoo_new
+#: model:ir.model.fields,field_description:odoo_new.field_book_borrow__validity
+msgid "Validity"
+msgstr ""
+
+#. module: odoo_new
+#: model:ir.model.constraint,message:odoo_new.constraint_book_borrow_check_validity
+msgid "Validity must be more than 1 day"
+msgstr ""
+
+#. module: odoo_new
+#: model_terms:ir.actions.act_window,help:odoo_new.book_borrow_action
+#: model_terms:ir.actions.act_window,help:odoo_new.book_details_action
+#: model_terms:ir.actions.act_window,help:odoo_new.book_genre_action
+msgid "Welcome!"
+msgstr ""
+
+#. module: odoo_new
+#. odoo-python
+#: code:addons/odoo_new/models/book_borrow.py:0
+#, python-format
+msgid "You can not enter the date of borrow from future."
+msgstr ""
+
+#. module: odoo_new
+#: model_terms:ir.actions.act_window,help:odoo_new.product_template_library_action
+msgid ""
+"You must define a product for everything you sell or purchase,\n"
+"                    whether it's a storable product, a consumable or a service."
+msgstr ""
+
+#. module: odoo_new
+#: model:ir.model,name:odoo_new.model_book_genre
+msgid "all books genre"
+msgstr ""
+
+#. module: odoo_new
+#: model:ir.model,name:odoo_new.model_res_partner
+msgid "all member details"
+msgstr "Liên hệ"
+
+#. module: odoo_new
+#: model_terms:ir.ui.view,arch_db:odoo_new.book_details_view_form
+msgid "details-book"
+msgstr ""
+
+#. module: odoo_new
+#: model_terms:ir.ui.view,arch_db:odoo_new.library_member_view_form
+msgid "library_member_form"
+msgstr ""
+
+#. module: odoo_new
+#: model_terms:ir.ui.view,arch_db:odoo_new.library_member_view_tree
+msgid "library_member_tree"
+msgstr ""
+
+#. module: odoo_new
+#: model:ir.model.fields,field_description:odoo_new.field_book_borrow__fine
+msgid "penalty(per book)"
+msgstr ""

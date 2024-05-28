@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <data>
+        <record id="res_config_settings_view_form" model="ir.ui.view">
+            <field name="name">res.config.settings.view.form.library</field>
+            <field name="model">res.config.settings</field>
+            <field name="priority" eval="90"/>
+            <field name="inherit_id" ref="base.res_config_settings_view_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//form" position="inside">
+                    <app data-string="Library Management" string="Library Management" name="library_management">
+                        <block title="Library Management Settings" name="library_management">
+<!--                            <setting string="Contract Type"-->
+<!--                                     help="Select the Contract Type"-->
+<!--                                     id="contract_type_setting">-->
+<!--                                <field name="penalty_amount"/>-->
+<!--                                <field name="max_day"/>-->
+<!--                                <div class="content-group"-->
+<!--                                     invisible="not contract_type"-->
+<!--                                     id="group_contract_type_setting">-->
+<!--                                    <div class="text-warning mt16">-->
+<!--                                        <strong>Save</strong>-->
+<!--                                        this page and come back here to set up the-->
+<!--                                        feature.-->
+<!--                                    </div>-->
+<!--                                </div>-->
+<!--                            </setting>-->
+                             <div class="col-md-6 o_setting_box">
+                                <div class="o_setting_right_pane">
+                                    <label for="penalty_amount" class="oe_inline o_form_label"/>
+<!--                                    <div class="text-muted">-->
+<!--                                        Penalty amount-->
+<!--                                    </div>-->
+                                </div>
+                                <div class="o_setting_right_pane">
+                                    <field name="penalty_amount"/>
+                                </div>
+                            </div>
+
+                              <div class="col-md-6 o_setting_box">
+                                <div class="o_setting_right_pane">
+                                    <label for="max_day" class="oe_inline o_form_label"/>
+<!--                                    <div class="text-muted">-->
+<!--                                        Max day-->
+<!--                                    </div>-->
+                                </div>
+                                <div class="o_setting_right_pane">
+                                    <field name="max_day"/>
+                                </div>
+                            </div>
+                        </block>
+                    </app>
+                </xpath>
+            </field>
+        </record>
+
+
+        <record id="library_config_settings_action" model="ir.actions.act_window">
+            <field name="name">Settings</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">res.config.settings</field>
+            <field name="view_mode">form</field>
+            <field name="target">inline</field>
+        </record>
+
+        <menuitem id="library_config_settings_action_menu" name="Settings" parent="library_menu_root"
+            action="library_config_settings_action"
+        />
+
+    </data>
+</odoo>
